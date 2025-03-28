@@ -356,7 +356,7 @@ type GetBatchPsDetailResponse struct {
 			ShareType                  string      `json:"share_type"`
 			PsCurrentTimeZone          string      `json:"ps_current_time_zone"`
 			UserMobleTel               string      `json:"user_moble_tel"`
-			PsId                       string      `json:"ps_id"`
+			PsId                       int         `json:"ps_id"`
 			CommunicationDevDetailList []struct {
 				IsEnable int    `json:"is_enable"`
 				Sn       string `json:"sn"`
