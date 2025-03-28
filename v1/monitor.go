@@ -280,7 +280,7 @@ func (c *Client) GetPVInverterRealTimeData(request GetPVInverterRealTimeDataRequ
 	}
 	fmt.Println("requestBytes:", string(requestBytes))
 	buf := bytes.NewBuffer(requestBytes)
-	body, err := c.doRequest("openapi/getCommunicationDevInfoByDevSn", buf)
+	body, err := c.doRequest("openapi/getPVInverterRealTimeData", buf)
 	if err != nil {
 		return nil, err
 	}
