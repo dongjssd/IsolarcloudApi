@@ -82,7 +82,7 @@ func (c *Client) GetPowerStationDetail(request GetPowerStationDetailRequest) (*G
 }
 
 // 查询设备的实时测点数据
-func (c *Client) getDeviceRealTimeData(request GetDeviceRealTimeDataRequest) (*GetDeviceRealTimeDataResponse, error) {
+func (c *Client) GetDeviceRealTimeData(request GetDeviceRealTimeDataRequest) (*GetDeviceRealTimeDataResponse, error) {
 	if request.Appkey == "" {
 		request.Appkey = c.appkey
 	}
